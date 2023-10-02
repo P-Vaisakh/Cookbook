@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookBook</title>
+    <script
+      src="https://kit.fontawesome.com/de28041e38.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <ul>
+          <!-- <i class="fa-solid fa-burger" style="color: #faf0e6"></i> -->
+          <a href="#"><li>Home</li></a>
+          <a href="#recipe-section"><li>Recipies</li></a>
+          
+        </ul>
+      </nav>
+      <div class="logoContainer">
+        <a href="#"><h1>CookBook</h1></a>
+      </div>
+      <div class="other">
+        <!-- <div class="search-item">
+          <input type="text" id="search-item" />
+          <button>
+            <i class="fa-solid fa-magnifying-glass" style="color: #352f44"></i>
+          </button>
+        </div> -->
+        <a id="account"
+          ><i class="fa-solid fa-user" style="color: #faf0e6"></i
+        ></a>
+      </div>
+    </header>
+
+    <div class="account d-none">
+      <div class="signup-container">
+        <h6>Dont have an account? Signup</h6>
+        <input type="text" placeholder="Enter a username" id="suname" />
+        <input type="text" placeholder="Enter password" id="spswd" />
+        <input type="text" placeholder="Confirm password" id="cspswd" />
+        <button class="btn mt-3" id="signupClick">Submit</button>
+        <p class="mt-3">
+          Already have an account?<button class="btn loginBtn">Login</button>
+        </p>
+      </div>
+      <div class="login-container text-center d-none">
+        <h4>Login</h4>
+        <input type="text" name="" id="userName" placeholder="username" />
+        <input type="text" placeholder="password" name="" id="pswd" />
+        <button class="btn mt-3" id="loginClick">Submit</button>
+        <p class="mt-3" style="color: #352f44 ; font-weight: 500; font-size: 14px;">Dont have an account? Signup</p>
+        <button class="alt-signup btn" style="color: #faf0e6; background: #352f44;">Signup</button>
+      </div>
+      <div class="profile text-center d-none">
+        <div class="profile-container ms-4 ps-2">
+          <img src="./img/Avatars.png" alt="" />
+        </div>
+        <h3>Username</h3>
+        <h6 class="mt-3" style="cursor: pointer;">
+          Favorites<i
+            class="fa-solid fa-chevron-right ms-1"
+            style="color: #352f44"
+          ></i>
+        </h6>
+        <button class="btn mt-3" id="logoutClick">Logout</button>
+      </div>
+
+      <div id="liveAlertPlaceholder"></div>
+    </div>
+
+    <!-- hero -->
+    <div class="hero">
+      <img src="./img/pexels-pixabay-326281.jpg" alt="" />
+      <div class="hero-text">
+        <h1>Explore. Cook. Savor.</h1>
+        <h3 class="mb-5">
+          Welcome to CookBook, your culinary journey starts here
+        </h3>
+        <a href="#recipe-section" class="mt-5">Find Recipies</a>
+       
+      </div>
+    </div>
+
+    <div class="recipe-section" id="recipe-section">
+      <h1>Find Your Recipe</h1>
+
+      
+
+      <div class="container">
+
+        
+        
+      </div>
+      <div class="container-md text-end pt-0 pb-4 pe-5"><button class="btn btn-sm" id="smButton">See More<i class="fa-solid fa-chevron-right ms-1" style="color: #faf0e6;"></i></button></div>
+    </div>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>

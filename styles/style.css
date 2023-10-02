@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #faf0e6;
+}
+
+body {
+  background: #faf0e6;
+}
+
+b {
+  color: #352f44;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  position: fixed;
+  z-index: 999;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.741),
+    rgba(169, 208, 113, 0)
+  );
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: red; */
+}
+
+header nav ul .fa-burger {
+  display: none;
+}
+
+header nav ul a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+header nav ul a li i {
+  margin: 0 4px;
+}
+
+header .logoContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header .logoContainer a h1 {
+  color: #faf0e6;
+}
+
+header .other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+header .other .search-item {
+  margin: 0 50px;
+}
+
+header .other .search-item input {
+  border-radius: 10px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: #faf0e6;
+  color: #352f44;
+  padding: 10px;
+}
+
+header .other .search-item button {
+  background: #faf0e6;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+header .other a i {
+  font-size: 20px;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+}
+
+.hero .hero-text h1 {
+  font-size: 70px;
+}
+
+.hero .hero-text h3 {
+  font-size: 25px;
+}
+
+.hero .hero-text a,
+.hero .hero-text button {
+  border-radius: 10px;
+  color: #352f44;
+  border: none;
+  padding: 13px;
+  font-weight: 500;
+  margin: 15px 5px 0 5px;
+  background: #faf0e6;
+}
+
+.recipe-section {
+  height: 100vh;
+  width: 100%;
+  padding: 70px 0;
+}
+
+.recipe-section h1 {
+  color: #352f44;
+  text-align: center;
+}
+
+.container {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.card .card-body .card-text {
+  color: #352f44;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  transition: transform ease 0.4s;
+}
+
+.card .card-body .btn {
+  font-size: 15px;
+  background: #352f44;
+  color: #faf0e6;
+}
+
+.account {
+  right: 0;
+  top: 70px;
+  background: #faf0e6b7;
+  width: 20%;
+  padding: 30px;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.account .profile-container {
+  width: 100px;
+  height: 100px;
+}
+
+.account .profile-container img {
+  width: 100%;
+}
+
+.account h3,
+.account h5,
+.account h6,
+.account h4 {
+  color: #352f44;
+  margin-left: -10px;
+}
+
+.account .btn {
+  background: #352f44;
+  color: #faf0e6;
+  padding: 8px 12px;
+  border: none;
+  font-size: 12px;
+}
+
+.account input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-top: 8px;
+  color: #352f44;
+  border-radius: 10px;
+}
+
+.signup-container p {
+  color: #352f44;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.signup-container p a {
+  color: #352f44;
+}
+
+.alert {
+  background: red;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+#smButton {
+  display: inline;
+  color: #faf0e6;
+  background: #352f44;
+  border-radius: 10px;
+  padding: 7px 10px;
+  width: 90px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    padding: 10px 0;
+  }
+  header nav {
+    display: none;
+  }
+  .logoContainer {
+    margin-top: 30px;
+  }
+  header #account {
+    margin-top: 24px;
+    margin-left: 24px;
+  }
+  .account {
+    left: 0;
+    width: 100%;
+  }
+  .account h3,
+  .account h5,
+  .account h6,
+  .account h4 {
+    color: #352f44;
+    margin-left: 0;
+  }
+  .hero .hero-text h3{
+    display: none;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
