@@ -1,5 +1,5 @@
 // const apiURL = "https://api.spoonacular.com/recipes/random";
 
-export const apiKey = "bbdcbdb0ce904d12a834dd09e7794c24";
+export const apiKey = "0916fad6f8634e2ba16f4cc77ab02b12";
 
 
